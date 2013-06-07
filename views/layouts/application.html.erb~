@@ -13,10 +13,6 @@
       <p>Put things in the header</p>
       <a href='me.html'>link</a>
 
-        <form method='post' action="<%= @request.path %>">
-            First name: <input type="text" name="first_name" placeholder='first name'/><br />
-            <input type="submit" value="Submit" />
-        </form>
     </p>
     <hr />
     <div>
@@ -29,7 +25,7 @@
     <hr />
     <div>
       <h4>EndNotesr</h4>
- <p><%= @request.query.inspect %></p>
+ <%= @request.query.inspect %>
 <%= link_to( 'google here', 'http://www.google.com') %>     
     <p>Put things in the footer</p>
     </div>
